@@ -1,12 +1,1 @@
-{
-  "name": "Online EXPRESS — Oleras National High School",
-  "short_name": "Online EXPRESS",
-  "description": "The online publication of Oleras National High School. Inform. Inspire. Impact.",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#f4f7fc",
-  "theme_color": "#0b397b",
-  "icons": [
-    { "src": "logo.png", "sizes": "any", "type": "image/png", "purpose": "any" }
-  ]
-}
+{"name":"ONHS Online Express — Oleras National High School","short_name":"ONHS Online Express","description":"ONHS Online Express, the official online publication of Oleras National High School.","start_url":"./index.html","display":"standalone","background_color":"#f4f7fb","theme_color":"#06438d","icons":[{"src":"assets/online-express-logo.png","sizes":"1254x1254","type":"image/png","purpose":"any maskable"}]}

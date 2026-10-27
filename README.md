@@ -1,33 +1,30 @@
-# Online EXPRESS — Oleras National High School
+# ONHS Online Express — Oleras National High School
 
-A responsive school publication website and installable PWA prototype using the supplied publication logo and blue/yellow branding.
+A responsive, installable static website/PWA prototype with News, Feature, Editorial (including editorial cartoon), Sports, Literary, Announcements, Trivia ticker, About Us, and a browser-based admin CMS.
 
-## Included files
-- `index.html` — responsive layout, Home, News, Editorial, Announcements, About Us, and Admin CMS views
-- `app.js` — sample content, navigation, full article view, editable content manager, local image handling, and editable About Us details
-- `logo.png` — supplied Online EXPRESS logo
-- `manifest.webmanifest` — PWA metadata
-- `service-worker.js` — basic app-shell caching for offline access after first load
+## Run locally
 
-## Preview locally
-You can open `index.html` directly for a basic preview. To test PWA installation and offline caching, run a local web server from this folder:
+Because the site uses a service worker, run it through a local web server rather than opening `index.html` directly. With Python installed, open a terminal in this folder and run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` in your browser. PWA installation requires HTTPS or localhost.
+Then visit `http://localhost:8000`. Open `admin.html` to manage content.
 
-## Edit content with Admin CMS
-1. Open the site and choose **ADMIN CMS**.
-2. Use **Articles** to edit or delete existing news, editorials, and announcements.
-3. Use **Cartoons** to edit or delete cartoon editorials.
-4. Use **Add Content** to add new content, select a publication type, add a story, author, date, photo caption, and image URL or upload an image file.
-5. Use **About Us** to edit the publication description, tagline, and purpose.
+## CMS capabilities
 
-Changes are saved in the current browser's local storage. Uploaded images are resized and stored in that browser. Content is not synchronized across computers or staff members.
+- Add, edit, publish/unpublish, and delete stories by section.
+- Edit announcements and their full details.
+- Replace the upper banner image and editorial cartoon image by URL or upload.
+- Edit tagline, About Us text, cartoon title/message, and scrolling trivia.
+- Export and import JSON backups.
+- Uploaded images are stored as browser data URLs; for this demo, choose images smaller than 1.5 MB.
 
-## Important production notes
-This is a no-payment, static prototype. It does not include administrator authentication, server-side storage, or shared multi-user editing. Before official public deployment, add secure admin sign-in, database storage, file hosting/backups, moderation, and a publication approval process. Replace all sample articles, dates, photos, captions, and cartoon messages with verified school content and approved images. Respect student privacy and obtain required consent before publishing identifiable learner photos.
+## Important limitations
 
-Google Fonts and sample photos use external URLs; full offline use of all remote images/fonts is not guaranteed. The service worker caches the local app shell.
+This is a functional front-end prototype. CMS edits are stored in `localStorage` in the current browser only; they are not shared with other visitors/devices and may be cleared with browser data. A public production deployment needs a backend/database, secure administrator authentication, shared media storage, and hosting. Google Fonts and sample Unsplash photos require an internet connection. Replace all sample copy and imagery with approved school content before publishing.
+
+## Brand assets
+
+The supplied ONHS Online Express logo is in `assets/online-express-logo.png`. A copy of the supplied website mockup reference is in `assets/website-mockup-reference.png`.
