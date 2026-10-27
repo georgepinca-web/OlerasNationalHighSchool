@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b397b">
+<meta name="description" content="Online EXPRESS — the official online publication of Oleras National High School.">
+<title>Online EXPRESS | Oleras National High School</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0b397b;--blue2:#0754a5;--yellow:#f3c528;--ink:#172b4d;--muted:#66758d;--green:#19804b;--paper:#f4f7fc}
+*{box-sizing:border-box}body{margin:0;font-family:Poppins,Arial,sans-serif;color:var(--ink);background:var(--paper)}button,input,textarea,select{font:inherit}button{cursor:pointer}
+header{background:#fff;border-bottom:4px solid var(--yellow);padding:15px max(4%,calc((100% - 1240px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:68px;height:68px}.brand-name{font-size:clamp(22px,3vw,31px);font-weight:800;line-height:1;color:var(--blue);letter-spacing:-1px}.brand-name span{color:#d8a800}.school-name{font-size:10px;letter-spacing:1px;color:var(--green);font-weight:700;margin-top:7px}
+nav{display:flex;gap:5px;flex-wrap:wrap}nav button{border:0;background:transparent;color:#17345f;padding:10px 12px;border-radius:9px;font-size:12px;font-weight:700}nav button.active,nav button:hover{background:var(--blue);color:white}
+.hero{max-width:1240px;width:92%;margin:22px auto;border-radius:15px;background:linear-gradient(110deg,#092e69,#0754a5);color:white;min-height:205px;display:grid;grid-template-columns:1.15fr .85fr;overflow:hidden}.hero-copy{padding:30px;align-self:center}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#ffdb4b;font-weight:700}.hero h1{font-size:clamp(27px,4vw,43px);line-height:1.17;margin:12px 0}.hero h1 span{color:#ffcf30}.hero p{margin:0;color:#e2eaf8}.hero-img{min-height:205px;background:linear-gradient(90deg,rgba(8,51,112,.08),rgba(8,51,112,0)),url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=900&q=80') center/cover}
+main{max-width:1240px;width:92%;margin:0 auto 30px}.view{display:none}.view.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:center;margin:25px 0 14px;gap:8px}.section-head h2{margin:0;font-size:22px;color:var(--blue)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.link{border:0;background:none;color:#0b4b9b;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #e2e8f0;border-radius:13px;overflow:hidden;box-shadow:0 3px 12px #17345f0b;min-width:0}.card img{width:100%;height:165px;object-fit:cover;display:block;background:#dce8f8}.card-body{padding:15px}.tag{display:inline-block;border-radius:5px;background:#e8f1ff;color:#0b4b9b;padding:4px 8px;font-size:10px;font-weight:700;text-transform:uppercase}.card h3{font-size:16px;line-height:1.4;margin:10px 0 7px;color:#102d57}.card p{font-size:12px;line-height:1.75;color:var(--muted);margin:0 0 12px}.meta{font-size:10px;color:#75839a;line-height:1.7}.read{border:0;background:transparent;color:#0752a4;font-weight:700;font-size:12px;padding:12px 0 0}
+.strip{margin:26px 0;background:#eaf2ff;border:1px solid #cbdcf5;border-radius:13px;padding:20px 24px;display:flex;align-items:center;gap:16px}.bell{background:var(--blue);color:white;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;font-size:22px;flex-shrink:0}.strip strong{color:var(--blue)}.strip p{margin:5px 0 0;font-size:12px;color:#586a85}
+.article{max-width:850px;margin:25px auto;background:white;border:1px solid #e1e8f2;border-radius:14px;overflow:hidden}.article>img{width:100%;max-height:410px;object-fit:cover;display:block}.article-body{padding:clamp(18px,4vw,38px)}.article h1{font-size:clamp(25px,4vw,38px);line-height:1.3;color:#0a3674;margin:14px 0}.story{font-size:14px;line-height:2;color:#33445e;white-space:pre-line;margin-top:24px}.caption{font-size:11px;color:#6b7890;padding:10px 16px;background:#f5f8fd}.back,.btn{border:1px solid #d6e1f0;border-radius:8px;padding:9px 13px;background:#f5f8fd;color:#153c71;font-weight:700;font-size:12px}.btn.primary{background:var(--blue);color:white;border-color:var(--blue)}.btn.danger{color:#b42318;border-color:#f2c7c4;background:#fff8f7}
+.admin{background:white;border:1px solid #e0e8f3;border-radius:14px;padding:20px;margin:22px 0}.admin h2{margin-top:0;color:var(--blue)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 20px}.tabs button{padding:9px 13px;border:1px solid #d6e1f0;border-radius:8px;background:#f5f8fd;color:#153c71;font-weight:700;font-size:12px}.tabs button.active{background:var(--blue);color:white}.note{background:#fff8dd;color:#745514;border-radius:8px;padding:11px;font-size:11px;line-height:1.7;margin-bottom:16px}.form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:700;color:#385273}.field input,.field textarea,.field select{border:1px solid #d8e2f0;border-radius:8px;padding:11px;width:100%;background:white;color:var(--ink);min-width:0}.field textarea{min-height:110px;resize:vertical}.list{display:grid;gap:9px}.row{border:1px solid #e4eaf3;border-radius:9px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.row small{display:block;color:#78869a;margin-top:4px}.actions{display:flex;gap:6px;flex-wrap:wrap}.empty{padding:30px;text-align:center;color:#73829a;background:white;border:1px dashed #cbd7e8;border-radius:12px}
+footer{background:#08295d;color:#dce8fb;text-align:center;padding:22px;font-size:11px;line-height:1.8}footer strong{color:white}
+@media(max-width:760px){header{padding:13px 4%}.logo{width:54px;height:54px}.brand-name{font-size:23px}nav{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}nav button{padding:10px 4px;font-size:11px}.hero{grid-template-columns:1fr;margin-top:14px}.hero-copy{padding:24px 21px}.hero-img{min-height:130px}main{width:92%}.grid{grid-template-columns:1fr;gap:13px}.card img{height:195px}.card h3{font-size:17px}.strip{padding:15px}.form{grid-template-columns:1fr}.field.full{grid-column:auto}.row{align-items:flex-start;flex-direction:column}.article{margin:14px 0}.section-head h2{font-size:19px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><img class="logo" src="logo.png" alt="Online EXPRESS logo"><div><div class="brand-name">online <span>EXPRESS</span></div><div class="school-name">OLERAS NATIONAL HIGH SCHOOL</div></div></div>
+  <nav aria-label="Main navigation">
+    <button class="active" data-page="home">HOME</button><button data-page="news">NEWS</button><button data-page="editorial">EDITORIAL</button><button data-page="announcements">ANNOUNCEMENTS</button><button data-page="about">ABOUT</button><button data-page="admin">ADMIN CMS</button>
+  </nav>
+</header>
+<section class="hero"><div class="hero-copy"><div class="kicker">The official online publication</div><h1>The Voice of the Learners.<br><span>The Pride of Oleras.</span></h1><p>Inform. Inspire. Impact.</p></div><div class="hero-img" role="img" aria-label="Illustrative school building photograph"></div></section>
+<main>
+<section class="view active" id="view-home">
+ <div class="section-head"><div><h2>Latest Stories</h2><p>Stories, ideas, and updates from our school community.</p></div><button class="link" data-go="news">All News →</button></div><div class="grid" id="home-grid"></div>
+ <div class="strip"><div class="bell">✦</div><div><strong>STAY INFORMED. STAY INVOLVED.</strong><p>Check back for school news, editorial perspectives, and important announcements.</p></div></div>
+ <div class="section-head"><div><h2>From the Editorial Desk</h2><p>Ideas and perspectives that matter.</p></div><button class="link" data-go="editorial">Read Editorials →</button></div><div class="grid" id="home-editorial"></div>
+</section>
+<section class="view" id="view-news"><div class="section-head"><div><h2>School News</h2><p>Reports and stories from Oleras National High School.</p></div></div><div class="grid" id="news-grid"></div></section>
+<section class="view" id="view-editorial"><div class="section-head"><div><h2>Editorial & Opinion</h2><p>Ideas, reflections, and student perspectives.</p></div></div><div class="grid" id="editorial-grid"></div><div class="section-head"><div><h2>Cartoon Editorial</h2><p>A visual take on school and community life.</p></div></div><div class="grid" id="cartoons-grid"></div></section>
+<section class="view" id="view-announcements"><div class="section-head"><div><h2>Announcements</h2><p>Sample notices and reminders for the school community.</p></div></div><div class="grid" id="announcements-grid"></div></section>
+<section class="view" id="view-about"><article class="article"><div class="article-body"><span class="tag">Our Publication</span><h1>About Online EXPRESS</h1><div class="story">Online EXPRESS is a sample school publication website for Oleras National High School. It is designed as a welcoming space for campus news, student voices, editorials, cartoons, and announcements.</div><h3>Our tagline</h3><p>Inform. Inspire. Impact.</p><h3>Our purpose</h3><p>To keep the school community informed, encourage responsible expression, and celebrate the achievements and experiences of learners.</p><p><strong>Note:</strong> This prototype contains placeholder stories and illustrative images. Replace them with verified school content before publication.</p></div></article></section>
+<section class="view" id="view-detail"><div id="detail-content"></div></section>
+<section class="view" id="view-admin"><div class="admin"><h2>Publication Admin CMS</h2><p>Manage sample stories and cartoon editorials from one workspace.</p><div class="note">Prototype mode: changes are saved in this browser using local storage. This is not a secure, multi-user production CMS. Add authentication and a server/database before deploying publicly.</div><div class="tabs"><button class="active" data-tab="articles">Articles</button><button data-tab="cartoons">Cartoons</button><button data-tab="new">Add Content</button></div>
+<div id="admin-articles"></div><div id="admin-cartoons" hidden></div>
+<div id="admin-new" hidden><form id="content-form" class="form">
+<div class="field"><label for="kind">Content type</label><select id="kind"><option value="news">News article</option><option value="editorial">Editorial article</option><option value="announcement">Announcement</option><option value="cartoon">Cartoon editorial</option></select></div>
+<div class="field"><label for="title">Title</label><input id="title" required maxlength="140" placeholder="Enter a clear headline"></div>
+<div class="field"><label for="author">Author / creator</label><input id="author" placeholder="Online EXPRESS Staff"></div>
+<div class="field"><label for="date">Publication date</label><input id="date" type="date"></div>
+<div class="field full"><label for="image">Image URL (optional)</label><input id="image" type="url" placeholder="https://example.com/photo.jpg"></div>
+<div class="field full"><label for="summary">Short summary / cartoon message</label><textarea id="summary" placeholder="A brief introduction or explanation"></textarea></div>
+<div class="field full"><label for="story">Full story / explanation</label><textarea id="story" placeholder="Write the complete article here..."></textarea></div>
+<div class="field full"><label for="caption">Photo caption</label><input id="caption" placeholder="Describe the photo and identify the activity"></div>
+<div class="field"><label for="status">Publication status</label><select id="status"><option value="published">Published</option><option value="draft">Draft</option></select></div>
+<div class="field full"><div class="actions"><button type="submit" class="btn primary" id="save">Save content</button><button type="button" class="btn" id="cancel" hidden>Cancel edit</button></div></div></form></div>
+</div></section>
+</main>
+<footer><strong>ONLINE EXPRESS</strong><br>Official Online Publication of Oleras National High School<br>Inform. Inspire. Impact.<br><span style="opacity:.7">© <span id="year"></span> · Sample prototype · Replace placeholder content before publication</span></footer>
+<script src="app.js"></script>
+</body></html>
