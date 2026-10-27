@@ -1,17 +1,12 @@
 {
-  "name": "Online EXPRESS \u2014 Oleras National High School",
+  "name": "Online EXPRESS — Oleras National High School",
   "short_name": "Online EXPRESS",
-  "description": "Official online publication prototype of Oleras National High School.",
-  "start_url": "./",
+  "description": "The online publication of Oleras National High School. Inform. Inspire. Impact.",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f4f7fc",
   "theme_color": "#0b397b",
   "icons": [
-    {
-      "src": "logo.png",
-      "sizes": "any",
-      "type": "image/png",
-      "purpose": "any"
-    }
+    { "src": "logo.png", "sizes": "any", "type": "image/png", "purpose": "any" }
   ]
 }
